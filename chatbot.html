@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <script src="chatbot.js"></script>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <p>In this project, you will create a chatbot that interacts with the user in the browser using the OpenAI's v1/chat/completions endpoint and GPT-3.5-turbo model.</p>
+
+    <h2>Requirements:</h2>
+    <ol>
+        <li>Use the JavaScript <code>prompt()</code> function to get input from the user. The prompt should include the entire chat history.</li>
+        <li>Use the JavaScript <code>alert()</code> function to display any errors that occur when calling the OpenAI API.</li>
+        <li>Use the JavaScript <code>fetch()</code> function to send POST requests to the OpenAI API's chat endpoint.</li>
+        <li>Create and send a JSON object in the body of the request that includes an array of message objects. Each message object should have a 'role' and a 'content' property.</li>
+        <li>Handle the response from the OpenAI API. If there is a message in the response, add it to the chat history and continue the chat. If there is no message, alert the user that the assistant did not return a response.</li>
+        <li>The chat should continue until the user enters an empty input or clicks "Cancel".</li>
+    </ol>
+
+    <h2>Expected Output:</h2>
+    <p>The application should provide an interactive chat experience in the browser, with the user inputting messages via the <code>prompt()</code> function and the AI's responses being added to the chat history. If the AI does not return a message, the user should be alerted that no response was received.</p>
+
+    <h2>Hint:</h2>
+    <p>Remember to use the 'Authorization' header with the value `Bearer ${OPEN_AI_API_KEY}` for your API requests. Replace `${OPEN_AI_API_KEY}` with your actual OpenAI API key.</p>
+
+
+</body>
+</html>
